@@ -32,10 +32,20 @@ class SchoolController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
+            'description' => 'nullable|string',
             'jenjang' => 'required|in:sd,smp,sma,smk',
             'alamat' => 'required|string',
             'tahun_ajaran' => 'required|string|max:20',
             'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'hero_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'phone' => 'nullable|string|max:20',
+            'email' => 'nullable|email|max:255',
+            'website' => 'nullable|url|max:255',
+            'social_media' => 'nullable|array',
+            'district' => 'nullable|string|max:100',
+            'headmaster_name' => 'nullable|string|max:255',
+            'headmaster_nip' => 'nullable|string|max:50',
+            'accreditation' => 'nullable|string|max:5',
         ]);
 
         $validated['is_active'] = $request->has('is_active');
@@ -43,6 +53,15 @@ class SchoolController extends Controller
         if ($request->hasFile('logo')) {
             $path = $request->file('logo')->store('schools', 'public');
             $validated['logo'] = $path;
+        }
+
+        if ($request->hasFile('hero_image')) {
+            $path = $request->file('hero_image')->store('schools/hero', 'public');
+            $validated['hero_image'] = $path;
+        }
+
+        if ($request->filled('social_media')) {
+             $validated['social_media'] = array_values($request->input('social_media'));
         }
 
         School::create($validated);
