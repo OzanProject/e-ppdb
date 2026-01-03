@@ -1,8 +1,8 @@
 # e-PPDB (Sistem Penerimaan Peserta Didik Baru Online)
 
-Aplikasi web modern untuk manajemen Penerimaan Peserta Didik Baru (PPDB) yang dibangun menggunakan Laravel 10. Sistem ini dirancang untuk memfasilitasi proses pendaftaran siswa secara online, mulai dari pengisian formulir, upload dokumen, seleksi otomatis, hingga pengumuman hasil.
+Aplikasi web modern untuk manajemen Penerimaan Peserta Didik Baru (PPDB) yang dibangun menggunakan Laravel 12. Sistem ini dirancang untuk memfasilitasi proses pendaftaran siswa secara online, mulai dari pengisian formulir, upload dokumen, seleksi otomatis, hingga pengumuman hasil.
 
-![Dashboard Preview](public/img/hero.jpg)
+![Dashboard Preview](public/img/hero.png)
 
 ## 🚀 Fitur Unggulan
 
@@ -31,7 +31,7 @@ Aplikasi web modern untuk manajemen Penerimaan Peserta Didik Baru (PPDB) yang di
 
 ## 🛠️ Teknologi yang Digunakan
 
-*   **Framework**: [Laravel 10](https://laravel.com/) (PHP)
+*   **Framework**: [Laravel 12](https://laravel.com/) (PHP)
 *   **Database**: MySQL
 *   **Frontend**: Tailwind CSS (Landing Page), Bootstrap 5 (Admin Template - DarkPan)
 *   **Authentication**: Laravel Breeze
