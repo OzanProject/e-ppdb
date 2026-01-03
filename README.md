@@ -92,4 +92,6 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi di komputer lokal Anda:
 Project ini open-source di bawah lisensi [MIT license](https://opensource.org/licenses/MIT).
 
 ---
+☕ **Dukung Pengembangan:** https://s.id/form_donasi
+
 *Dibuat dengan ❤️ untuk kemajuan pendidikan Indonesia.*
