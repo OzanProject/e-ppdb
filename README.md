@@ -2,7 +2,7 @@
 
 Aplikasi web modern untuk manajemen Penerimaan Peserta Didik Baru (PPDB) yang dibangun menggunakan Laravel 12. Sistem ini dirancang untuk memfasilitasi proses pendaftaran siswa secara online, mulai dari pengisian formulir, upload dokumen, seleksi otomatis, hingga pengumuman hasil.
 
-![Dashboard Preview](public/img/hero.png)
+![Dashboard Preview](public/img/depan.png)
 
 ## 🚀 Fitur Unggulan
 
